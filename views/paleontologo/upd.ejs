@@ -1,0 +1,28 @@
+<%- include('../cabecalho')%>
+
+
+    <div>
+        <tr><a href="/paleontologo"> ← Voltar </a></tr>
+        <h3>Atualizar Paleontólogo</h3>
+
+
+        <form method="post">
+            <p>ID:</p>
+            <input type="text" name="id" value="<%=paleontologos.id%>" readonly>
+            <br>
+            <p>Nome</p>
+            <input type="text" placeholder="Nome do Paleontólogo" name="nome" value="<%=paleontologos.nome%>">
+            <br>
+            <p>Nascimento</p>
+            <input type="number" value="2026" name="nascimento" value="<%=paleontologos.nascimento%>">
+            <br>
+            <p>Descoberta</p>
+            <input type="text" placeholder="Espécies, Dinossauros, etc..." name="descoberta" value="<%=paleontologos.descoberta%>">
+            <br><br>
+            <button type="submit">Atualizar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </div>
+    </body>
+
+    </html>
